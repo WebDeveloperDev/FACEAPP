@@ -35,6 +35,7 @@ let tablespreadsheet=document.querySelector(".table");
         let count=2
         while (count<1138) {
             if (fetchdata[`B${count}`].v==1) {
+                console.log(fetchdata['B2'].v)
             listofoffensivecomments.push(fetchdata[`A${count}`].v)
         }
         count+=1
