@@ -30,7 +30,7 @@ let listofoffensivecomments=[]
 let tablespreadsheet=document.querySelector(".table");
 (
     async()=>{
-        let workbook=XLSX.read(await(await fetch("https://webdeveloperdev.github.io/FACEAPP/jsfile/index.js")).arrayBuffer());
+        let workbook=XLSX.read(await(await fetch("/ISEP Sexist Data labeling.xlsx")).arrayBuffer());
         setTimeout(() => {
           let fetchdata=workbook.Sheets["ISEP Sexist Data labeling.tsv"]
         let count=2
