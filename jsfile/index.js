@@ -31,7 +31,8 @@ let tablespreadsheet=document.querySelector(".table");
 (
     async()=>{
         let workbook=XLSX.read(await(await fetch("https://webdeveloperdev.github.io/FACEAPP/jsfile/index.js")).arrayBuffer());
-        let fetchdata=workbook.Sheets["ISEP Sexist Data labeling.tsv"]
+        setTimeout(() => {
+          let fetchdata=workbook.Sheets["ISEP Sexist Data labeling.tsv"]
         let count=2
          console.log(fetchdata)
         
@@ -42,6 +43,7 @@ let tablespreadsheet=document.querySelector(".table");
         count+=1
     }
     console.log(listofoffensivecomments)
+    }, 1000);
     }
 )()
 if (currentuser == null) {
