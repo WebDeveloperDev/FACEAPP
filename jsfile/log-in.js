@@ -3,13 +3,13 @@ if(window.localStorage.getItem("userdetailsStorage")==null){
 
     let userdetails = {
         users: [
-            {
-                "firstname": "Devendra",
-                "lastname": "Solanki",
-                "username": "webdeveloperdev",
-                "usergender": "male",
-                "useremail": "talk2devendra.solanki@gmail.com",
-                "password": "Bhopal@123"
+              {
+                "firstname": "Sanjana",
+                "lastname": "Mala",
+                "username": "sanju",
+                "usergender": "female",
+                "useremail": "sanja@gmail.com",
+                "password": "sanju01"
             }
         ]
     }
